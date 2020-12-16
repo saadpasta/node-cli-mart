@@ -11,7 +11,8 @@ const rl = readline.createInterface({
 
 rl.prompt();
 rl.on('line', (line) => {
-    commands.parseInput(line.trim());
+  const result = commands.parseInput(line.trim());
+  console.log(result);
   rl.prompt();
 }).on('close', () => {
   console.log('Have a great day!');
