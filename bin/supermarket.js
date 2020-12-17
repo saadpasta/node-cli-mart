@@ -11,6 +11,7 @@ const rl = readline.createInterface({
   prompt: '$ ',
 });
 
+// arguments passed when running the file
 const args = process.argv.slice(2);
 
 const inventoryFileName = args[0];
