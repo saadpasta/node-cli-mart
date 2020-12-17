@@ -2,8 +2,7 @@
 
 const readline = require('readline');
 const fs = require('fs');
-const commands = require('./commands');
-
+const { parseInput } = require('./commands');
 const { readInventoryFile } = require('./inventory');
 
 const rl = readline.createInterface({
@@ -56,7 +55,7 @@ function runAutomatedCommands() {
 }
 
 function printResult(line) {
-  const result = commands.parseInput(line.trim());
+  const result = parseInput(line.trim());
   console.log(result);
 
   // exit cli if command is checkout

@@ -21,6 +21,8 @@ const cart = {};
 const offers = ['buy_2_get_1_free', 'buy_1_get_half_off'];
 
 const addProductToCart = (product, quantity) => {
+  if (!quantity) return 'Enter quantity';
+
   if (inventory[product]) {
     // Check if product exits in inventory
 
@@ -33,7 +35,6 @@ const addProductToCart = (product, quantity) => {
     }
     return `added ${product} ${quantity}`;
   }
-  console.log(inventory);
   return 'No Such Product Found';
 };
 
