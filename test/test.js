@@ -29,3 +29,9 @@ test('Bill', async (done) => {
   expect(result).toBe('subtotal:52.50, discount:0.00, total:52.50');
   done();
 });
+
+test('Check Offer and Discount', async (done) => {
+  const result = commands.parseInput('offer buy_2_get_1_free soap');
+  expect(result).toBe('offer added');
+  done();
+});
