@@ -1,0 +1,12 @@
+checkout
+add soap 5
+add bread 1
+bill
+offer buy_2_get_1_free soap
+bill
+add soap 1
+bill
+offer buy_1_get_half_off bread
+add bread 1
+bill
+checkout
