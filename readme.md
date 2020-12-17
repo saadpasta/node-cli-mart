@@ -1,5 +1,8 @@
 # SuperMarket Node Js CLI 
 
+## Clone the repo by running the following command
+### `git clone https://github.com/saadpasta/node-cli-mart.git`
+
 ## Setup 
 ## Run the following commands to run the cli.
 
